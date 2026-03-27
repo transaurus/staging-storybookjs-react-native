@@ -1,0 +1,1130 @@
+appId: host.exp.Exponent
+name: Take screenshots of all Storybook stories
+---
+- stopApp: host.exp.Exponent
+- openLink: 'exp://127.0.0.1:8081/--/'
+- waitForAnimationToEnd
+- extendedWaitUntil:
+    visible: '-wont be found-'
+    optional: true
+    timeout: 2500
+
+# Story ControlExamples-ControlExample - Example
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'controlexamples-controlexample--example'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'controlexamples-controlexample--example'
+- assertScreenshot: 'ControlExamples-ControlExample---Example.png'
+
+# Story ControlExamples-Array - Basic
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'controlexamples-array--basic'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'controlexamples-array--basic'
+- assertScreenshot: 'ControlExamples-Array---Basic.png'
+
+# Story ControlExamples-Boolean - Basic
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'controlexamples-boolean--basic'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'controlexamples-boolean--basic'
+- assertScreenshot: 'ControlExamples-Boolean---Basic.png'
+
+# Story ControlExamples-Boolean - On
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'controlexamples-boolean--on'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'controlexamples-boolean--on'
+- assertScreenshot: 'ControlExamples-Boolean---On.png'
+
+# Story ControlExamples-Color - Color Example
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'controlexamples-color--color-example'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'controlexamples-color--color-example'
+- assertScreenshot: 'ControlExamples-Color---Color-Example.png'
+
+# Story ControlExamples-Date - Basic
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'controlexamples-date--basic'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'controlexamples-date--basic'
+- assertScreenshot: 'ControlExamples-Date---Basic.png'
+
+# Story ControlExamples-Number - Basic
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'controlexamples-number--basic'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'controlexamples-number--basic'
+- assertScreenshot: 'ControlExamples-Number---Basic.png'
+
+# Story ControlExamples-Number - Range
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'controlexamples-number--range'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'controlexamples-number--range'
+- assertScreenshot: 'ControlExamples-Number---Range.png'
+
+# Story ControlExamples-Object - Basic
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'controlexamples-object--basic'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'controlexamples-object--basic'
+- assertScreenshot: 'ControlExamples-Object---Basic.png'
+
+# Story ControlExamples-Radio - Basic
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'controlexamples-radio--basic'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'controlexamples-radio--basic'
+- assertScreenshot: 'ControlExamples-Radio---Basic.png'
+
+# Story ControlExamples-Reproductions-SelectWithNumber - Basic
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'controlexamples-reproductions-selectwithnumber--basic'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'controlexamples-reproductions-selectwithnumber--basic'
+- assertScreenshot: 'ControlExamples-Reproductions-SelectWithNumber---Basic.png'
+
+# Story ControlExamples-Select - Basic
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'controlexamples-select--basic'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'controlexamples-select--basic'
+- assertScreenshot: 'ControlExamples-Select---Basic.png'
+
+# Story ControlExamples-Select - With Labels
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'controlexamples-select--with-labels'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'controlexamples-select--with-labels'
+- assertScreenshot: 'ControlExamples-Select---With-Labels.png'
+
+# Story ControlExamples-Select - With Mapping
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'controlexamples-select--with-mapping'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'controlexamples-select--with-mapping'
+- assertScreenshot: 'ControlExamples-Select---With-Mapping.png'
+
+# Story ControlExamples-Text - Basic
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'controlexamples-text--basic'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'controlexamples-text--basic'
+- assertScreenshot: 'ControlExamples-Text---Basic.png'
+
+# Story ControlExamples-WebCompatibility - Defined
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'controlexamples-webcompatibility--defined'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'controlexamples-webcompatibility--defined'
+- assertScreenshot: 'ControlExamples-WebCompatibility---Defined.png'
+
+# Story ControlExamples-WebCompatibility - Undefined
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'controlexamples-webcompatibility--undefined'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'controlexamples-webcompatibility--undefined'
+- assertScreenshot: 'ControlExamples-WebCompatibility---Undefined.png'
+
+# Story InteractionExample - Scrolling
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'interactionexample--scrolling'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'interactionexample--scrolling'
+- assertScreenshot: 'InteractionExample---Scrolling.png'
+
+# Story InteractionExample - Static
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'interactionexample--static'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'interactionexample--static'
+- assertScreenshot: 'InteractionExample---Static.png'
+
+# Story InteractionExample - Touchable
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'interactionexample--touchable'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'interactionexample--touchable'
+- assertScreenshot: 'InteractionExample---Touchable.png'
+
+# Story DeepControls - Basic
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'deepcontrols--basic'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'deepcontrols--basic'
+- assertScreenshot: 'DeepControls---Basic.png'
+
+# Story ActionExample-Actions - Basic
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'actionexample-actions--basic'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'actionexample-actions--basic'
+- assertScreenshot: 'ActionExample-Actions---Basic.png'
+
+# Story BackgroundExample-BackgroundCsf - Basic
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'backgroundexample-backgroundcsf--basic'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'backgroundexample-backgroundcsf--basic'
+- assertScreenshot: 'BackgroundExample-BackgroundCsf---Basic.png'
+
+# Story BackgroundExample-ThemedCard - Dark Locked
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'backgroundexample-themedcard--dark-locked'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'backgroundexample-themedcard--dark-locked'
+- assertScreenshot: 'BackgroundExample-ThemedCard---Dark-Locked.png'
+
+# Story BackgroundExample-ThemedCard - Default
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'backgroundexample-themedcard--default'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'backgroundexample-themedcard--default'
+- assertScreenshot: 'BackgroundExample-ThemedCard---Default.png'
+
+# Story HiddenControls - Basic
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'hiddencontrols--basic'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'hiddencontrols--basic'
+- assertScreenshot: 'HiddenControls---Basic.png'
+
+# Story InputExample-TextInput - Basic
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'inputexample-textinput--basic'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'inputexample-textinput--basic'
+- assertScreenshot: 'InputExample-TextInput---Basic.png'
+
+# Story LoginDocsExample-Button - Disabled
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'logindocsexample-button--disabled'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'logindocsexample-button--disabled'
+- assertScreenshot: 'LoginDocsExample-Button---Disabled.png'
+
+# Story LoginDocsExample-Button - Loading
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'logindocsexample-button--loading'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'logindocsexample-button--loading'
+- assertScreenshot: 'LoginDocsExample-Button---Loading.png'
+
+# Story LoginDocsExample-Button - Long Title
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'logindocsexample-button--long-title'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'logindocsexample-button--long-title'
+- assertScreenshot: 'LoginDocsExample-Button---Long-Title.png'
+
+# Story LoginDocsExample-Button - Primary
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'logindocsexample-button--primary'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'logindocsexample-button--primary'
+- assertScreenshot: 'LoginDocsExample-Button---Primary.png'
+
+# Story LoginDocsExample-Button - Secondary
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'logindocsexample-button--secondary'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'logindocsexample-button--secondary'
+- assertScreenshot: 'LoginDocsExample-Button---Secondary.png'
+
+# Story LoginDocsExample-Button - Secondary Disabled
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'logindocsexample-button--secondary-disabled'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'logindocsexample-button--secondary-disabled'
+- assertScreenshot: 'LoginDocsExample-Button---Secondary-Disabled.png'
+
+# Story LoginDocsExample-Button - Secondary Loading
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'logindocsexample-button--secondary-loading'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'logindocsexample-button--secondary-loading'
+- assertScreenshot: 'LoginDocsExample-Button---Secondary-Loading.png'
+
+# Story LoginDocsExample-LoginForm - Default
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'logindocsexample-loginform--default'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'logindocsexample-loginform--default'
+- assertScreenshot: 'LoginDocsExample-LoginForm---Default.png'
+
+# Story LoginDocsExample-LoginForm - Email Error Only
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'logindocsexample-loginform--email-error-only'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'logindocsexample-loginform--email-error-only'
+- assertScreenshot: 'LoginDocsExample-LoginForm---Email-Error-Only.png'
+
+# Story LoginDocsExample-LoginForm - Loading
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'logindocsexample-loginform--loading'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'logindocsexample-loginform--loading'
+- assertScreenshot: 'LoginDocsExample-LoginForm---Loading.png'
+
+# Story LoginDocsExample-LoginForm - Long Errors
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'logindocsexample-loginform--long-errors'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'logindocsexample-loginform--long-errors'
+- assertScreenshot: 'LoginDocsExample-LoginForm---Long-Errors.png'
+
+# Story LoginDocsExample-LoginForm - Password Error Only
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'logindocsexample-loginform--password-error-only'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'logindocsexample-loginform--password-error-only'
+- assertScreenshot: 'LoginDocsExample-LoginForm---Password-Error-Only.png'
+
+# Story LoginDocsExample-LoginForm - With Errors
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'logindocsexample-loginform--with-errors'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'logindocsexample-loginform--with-errors'
+- assertScreenshot: 'LoginDocsExample-LoginForm---With-Errors.png'
+
+# Story LoginDocsExample-TextInput - Default
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'logindocsexample-textinput--default'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'logindocsexample-textinput--default'
+- assertScreenshot: 'LoginDocsExample-TextInput---Default.png'
+
+# Story LoginDocsExample-TextInput - Empty State
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'logindocsexample-textinput--empty-state'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'logindocsexample-textinput--empty-state'
+- assertScreenshot: 'LoginDocsExample-TextInput---Empty-State.png'
+
+# Story LoginDocsExample-TextInput - Filled
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'logindocsexample-textinput--filled'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'logindocsexample-textinput--filled'
+- assertScreenshot: 'LoginDocsExample-TextInput---Filled.png'
+
+# Story LoginDocsExample-TextInput - Long Error Message
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'logindocsexample-textinput--long-error-message'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'logindocsexample-textinput--long-error-message'
+- assertScreenshot: 'LoginDocsExample-TextInput---Long-Error-Message.png'
+
+# Story LoginDocsExample-TextInput - Long Label
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'logindocsexample-textinput--long-label'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'logindocsexample-textinput--long-label'
+- assertScreenshot: 'LoginDocsExample-TextInput---Long-Label.png'
+
+# Story LoginDocsExample-TextInput - Password
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'logindocsexample-textinput--password'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'logindocsexample-textinput--password'
+- assertScreenshot: 'LoginDocsExample-TextInput---Password.png'
+
+# Story LoginDocsExample-TextInput - Playground
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'logindocsexample-textinput--playground'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'logindocsexample-textinput--playground'
+- assertScreenshot: 'LoginDocsExample-TextInput---Playground.png'
+
+# Story LoginDocsExample-TextInput - With Error
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'logindocsexample-textinput--with-error'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'logindocsexample-textinput--with-error'
+- assertScreenshot: 'LoginDocsExample-TextInput---With-Error.png'
+
+# Story LoginDocsExample-TextInput - With Label
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'logindocsexample-textinput--with-label'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'logindocsexample-textinput--with-label'
+- assertScreenshot: 'LoginDocsExample-TextInput---With-Label.png'
+
+# Story NestingExample-ChatMessage - Message First
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'nestingexample-chatmessage--message-first'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'nestingexample-chatmessage--message-first'
+- assertScreenshot: 'NestingExample-ChatMessage---Message-First.png'
+
+# Story NestingExample-ChatMessage - Message Second
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'nestingexample-chatmessage--message-second'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'nestingexample-chatmessage--message-second'
+- assertScreenshot: 'NestingExample-ChatMessage---Message-Second.png'
+
+# Story NestingExample-Message-bubble-a very long name for a title that just keeps going and going - First
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'nestingexample-message-bubble-a-very-long-name-for-a-title-that-just-keeps-going-and-going--first'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'nestingexample-message-bubble-a-very-long-name-for-a-title-that-just-keeps-going-and-going--first'
+- assertScreenshot: 'NestingExample-Message-bubble-a-very-long-name-for-a-title-that-just-keeps-going-and-going---First.png'
+
+# Story NestingExample-Message-bubble-a very long name for a title that just keeps going and going - Second Story
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'nestingexample-message-bubble-a-very-long-name-for-a-title-that-just-keeps-going-and-going--second'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'nestingexample-message-bubble-a-very-long-name-for-a-title-that-just-keeps-going-and-going--second'
+- assertScreenshot: 'NestingExample-Message-bubble-a-very-long-name-for-a-title-that-just-keeps-going-and-going---Second-Story.png'
+
+# Story NestingExample-Message-bubble - First
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'nestingexample-message-bubble--first'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'nestingexample-message-bubble--first'
+- assertScreenshot: 'NestingExample-Message-bubble---First.png'
+
+# Story NestingExample-Message-bubble - Second Story
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'nestingexample-message-bubble--second'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'nestingexample-message-bubble--second'
+- assertScreenshot: 'NestingExample-Message-bubble---Second-Story.png'
+
+# Story NestingExample-Message-Reactions - Message One
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'nestingexample-message-reactions--message-one'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'nestingexample-message-reactions--message-one'
+- assertScreenshot: 'NestingExample-Message-Reactions---Message-One.png'
+
+# Story NestingExample-Message-Reactions - Message Two
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'nestingexample-message-reactions--message-two'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'nestingexample-message-reactions--message-two'
+- assertScreenshot: 'NestingExample-Message-Reactions---Message-Two.png'
+
+# Story NestingExample-MessageInput - Basic
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'nestingexample-messageinput--basic'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'nestingexample-messageinput--basic'
+- assertScreenshot: 'NestingExample-MessageInput---Basic.png'
+
+# Story NotesExample - Notes Example
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'notesexample--notes-example'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'notesexample--notes-example'
+- assertScreenshot: 'NotesExample---Notes-Example.png'
+
+# Story react-native-ui-src-Layout - Basic
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-src-layout--basic'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-src-layout--basic'
+- assertScreenshot: 'react-native-ui-src-Layout---Basic.png'
+
+# Story react-native-ui-src-Layout - Overflow Addons Example
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-src-layout--overflow-addons-example'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-src-layout--overflow-addons-example'
+- assertScreenshot: 'react-native-ui-src-Layout---Overflow-Addons-Example.png'
+
+# Story react-native-ui-src-Layout - Overflow Sidebar Example
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-src-layout--overflow-sidebar-example'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-src-layout--overflow-sidebar-example'
+- assertScreenshot: 'react-native-ui-src-Layout---Overflow-Sidebar-Example.png'
+
+# Story react-native-ui-UI-SearchResults - Default
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-searchresults--default'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-searchresults--default'
+- assertScreenshot: 'react-native-ui-UI-SearchResults---Default.png'
+
+# Story react-native-ui-UI-Sidebar-Explorer - Simple
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-explorer--simple'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-explorer--simple'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-Explorer---Simple.png'
+
+# Story react-native-ui-UI-Sidebar-Sidebar - Empty
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-sidebar--empty'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-sidebar--empty'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-Sidebar---Empty.png'
+
+# Story react-native-ui-UI-Sidebar-Sidebar - Index Error
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-sidebar--index-error'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-sidebar--index-error'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-Sidebar---Index-Error.png'
+
+# Story react-native-ui-UI-Sidebar-Sidebar - Loading
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-sidebar--loading'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-sidebar--loading'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-Sidebar---Loading.png'
+
+# Story react-native-ui-UI-Sidebar-Sidebar - Loading With Ref Error
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-sidebar--loading-with-ref-error'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-sidebar--loading-with-ref-error'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-Sidebar---Loading-With-Ref-Error.png'
+
+# Story react-native-ui-UI-Sidebar-Sidebar - Loading With Refs
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-sidebar--loading-with-refs'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-sidebar--loading-with-refs'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-Sidebar---Loading-With-Refs.png'
+
+# Story react-native-ui-UI-Sidebar-Sidebar - Scrolled
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-sidebar--scrolled'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-sidebar--scrolled'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-Sidebar---Scrolled.png'
+
+# Story react-native-ui-UI-Sidebar-Sidebar - Searching
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-sidebar--searching'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-sidebar--searching'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-Sidebar---Searching.png'
+
+# Story react-native-ui-UI-Sidebar-Sidebar - Simple
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-sidebar--simple'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-sidebar--simple'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-Sidebar---Simple.png'
+
+# Story react-native-ui-UI-Sidebar-Sidebar - Statuses Collapsed
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-sidebar--statuses-collapsed'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-sidebar--statuses-collapsed'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-Sidebar---Statuses-Collapsed.png'
+
+# Story react-native-ui-UI-Sidebar-Sidebar - Statuses Open
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-sidebar--statuses-open'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-sidebar--statuses-open'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-Sidebar---Statuses-Open.png'
+
+# Story react-native-ui-UI-Sidebar-Sidebar - With Ref Empty
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-sidebar--with-ref-empty'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-sidebar--with-ref-empty'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-Sidebar---With-Ref-Empty.png'
+
+# Story react-native-ui-UI-Sidebar-Sidebar - With Refs
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-sidebar--with-refs'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-sidebar--with-refs'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-Sidebar---With-Refs.png'
+
+# Story react-native-ui-UI-Sidebar-Tree - Dark
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-tree--dark'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-tree--dark'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-Tree---Dark.png'
+
+# Story react-native-ui-UI-Sidebar-Tree - Full
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-tree--full'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-tree--full'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-Tree---Full.png'
+
+# Story react-native-ui-UI-Sidebar-Tree - Single Story Components
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-tree--single-story-components'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-tree--single-story-components'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-Tree---Single-Story-Components.png'
+
+# Story react-native-ui-UI-Sidebar-Tree - Story with a storyName
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-tree--with-story-names'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-tree--with-story-names'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-Tree---Story-with-a-storyName.png'
+
+# Story react-native-ui-UI-Sidebar-TreeNode - Expandable
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-treenode--expandable'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-treenode--expandable'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-TreeNode---Expandable.png'
+
+# Story react-native-ui-UI-Sidebar-TreeNode - Expandable Long Name
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-treenode--expandable-long-name'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-treenode--expandable-long-name'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-TreeNode---Expandable-Long-Name.png'
+
+# Story react-native-ui-UI-Sidebar-TreeNode - Nested
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-treenode--nested'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-treenode--nested'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-TreeNode---Nested.png'
+
+# Story react-native-ui-UI-Sidebar-TreeNode - Selection
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-treenode--selection'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-treenode--selection'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-TreeNode---Selection.png'
+
+# Story react-native-ui-UI-Sidebar-TreeNode - Selection With Long Name
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-treenode--selection-with-long-name'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-treenode--selection-with-long-name'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-TreeNode---Selection-With-Long-Name.png'
+
+# Story react-native-ui-UI-Sidebar-TreeNode - Types
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-sidebar-treenode--types'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-sidebar-treenode--types'
+- assertScreenshot: 'react-native-ui-UI-Sidebar-TreeNode---Types.png'
+
+# Story react-native-ui-UI-StorybookLogo - Image Element Logo
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-storybooklogo--image-element-logo'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-storybooklogo--image-element-logo'
+- assertScreenshot: 'react-native-ui-UI-StorybookLogo---Image-Element-Logo.png'
+
+# Story react-native-ui-UI-StorybookLogo - Image Logo
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-storybooklogo--image-logo'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-storybooklogo--image-logo'
+- assertScreenshot: 'react-native-ui-UI-StorybookLogo---Image-Logo.png'
+
+# Story react-native-ui-UI-StorybookLogo - Image Source Logo
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-storybooklogo--image-source-logo'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-storybooklogo--image-source-logo'
+- assertScreenshot: 'react-native-ui-UI-StorybookLogo---Image-Source-Logo.png'
+
+# Story react-native-ui-UI-StorybookLogo - Image Url Logo
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-storybooklogo--image-url-logo'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-storybooklogo--image-url-logo'
+- assertScreenshot: 'react-native-ui-UI-StorybookLogo---Image-Url-Logo.png'
+
+# Story react-native-ui-UI-StorybookLogo - Title Logo
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'react-native-ui-ui-storybooklogo--title-logo'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'react-native-ui-ui-storybooklogo--title-logo'
+- assertScreenshot: 'react-native-ui-UI-StorybookLogo---Title-Logo.png'
+
+# Story SafeAreaExample-SafeAreaInside - Basic
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'safeareaexample-safeareainside--basic'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'safeareaexample-safeareainside--basic'
+- assertScreenshot: 'SafeAreaExample-SafeAreaInside---Basic.png'
+
+# Story SafeAreaExample-SafeAreaInside - List Basic
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'safeareaexample-safeareainside--list-basic'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'safeareaexample-safeareainside--list-basic'
+- assertScreenshot: 'SafeAreaExample-SafeAreaInside---List-Basic.png'
+
+# Story SafeAreaExample-SafeAreaOutside - Basic
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'safeareaexample-safeareaoutside--basic'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'safeareaexample-safeareaoutside--basic'
+- assertScreenshot: 'SafeAreaExample-SafeAreaOutside---Basic.png'
+
+# Story SafeAreaExample-SafeAreaOutside - List Basic
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'safeareaexample-safeareaoutside--list-basic'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'safeareaexample-safeareaoutside--list-basic'
+- assertScreenshot: 'SafeAreaExample-SafeAreaOutside---List-Basic.png'
+
+# Story SafeAreaExample-UsableArea - No Safe Area
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'safeareaexample-usablearea--no-safe-area'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'safeareaexample-usablearea--no-safe-area'
+- assertScreenshot: 'SafeAreaExample-UsableArea---No-Safe-Area.png'
+
+# Story SafeAreaExample-UsableArea - Safe Area
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'safeareaexample-usablearea--safe-area'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'safeareaexample-usablearea--safe-area'
+- assertScreenshot: 'SafeAreaExample-UsableArea---Safe-Area.png'
+
+# Story StoryName - CSF 2 Example
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'storyname--csf-2-example'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'storyname--csf-2-example'
+- assertScreenshot: 'StoryName---CSF-2-Example.png'
+
+# Story StoryName - csf2 with name
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'storyname--csf-2-example-with-name'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'storyname--csf-2-example-with-name'
+- assertScreenshot: 'StoryName---csf2-with-name.png'
+
+# Story StoryName - With Name
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'storyname--with-name'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'storyname--with-name'
+- assertScreenshot: 'StoryName---With-Name.png'
+
+# Story StoryName - With No Name
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'storyname--with-no-name'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'storyname--with-no-name'
+- assertScreenshot: 'StoryName---With-No-Name.png'
+
+# Story StoryName - With Story Name
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'storyname--with-story-name'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'storyname--with-story-name'
+- assertScreenshot: 'StoryName---With-Story-Name.png'
+
+# Story TestCase - Basic
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'testcase--basic'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'testcase--basic'
+- assertScreenshot: 'TestCase---Basic.png'
+
+# Story TestCase2 - Basic
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'testcase2--basic'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'testcase2--basic'
+- assertScreenshot: 'TestCase2---Basic.png'
+
+# Story UserProfileCard - Default
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'userprofilecard--default'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'userprofilecard--default'
+- assertScreenshot: 'UserProfileCard---Default.png'
+
+# Story UserProfileCard - Following
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'userprofilecard--following'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'userprofilecard--following'
+- assertScreenshot: 'UserProfileCard---Following.png'
+
+# Story UserProfileCard - Long Content
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'userprofilecard--long-content'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'userprofilecard--long-content'
+- assertScreenshot: 'UserProfileCard---Long-Content.png'
+
+# Story UserProfileCard - Minimal Card
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'userprofilecard--minimal-card'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'userprofilecard--minimal-card'
+- assertScreenshot: 'UserProfileCard---Minimal-Card.png'
+
+# Story UserProfileCard - Online User
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'userprofilecard--online-user'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'userprofilecard--online-user'
+- assertScreenshot: 'UserProfileCard---Online-User.png'
+
+# Story UserProfileCard - Popular User
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'userprofilecard--popular-user'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'userprofilecard--popular-user'
+- assertScreenshot: 'UserProfileCard---Popular-User.png'
+
+# Story UserProfileCard - Verified User
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'userprofilecard--verified-user'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'userprofilecard--verified-user'
+- assertScreenshot: 'UserProfileCard---Verified-User.png'
+
+# Story UserProfileCard - With Avatar
+- runScript:
+    file: 'storybook-screenshots.select-story-sync.js'
+    env:
+      STORY_ID: 'userprofilecard--with-avatar'
+- waitForAnimationToEnd
+- assertVisible:
+    id: 'userprofilecard--with-avatar'
+- assertScreenshot: 'UserProfileCard---With-Avatar.png'

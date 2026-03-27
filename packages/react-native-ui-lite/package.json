@@ -1,0 +1,63 @@
+{
+  "name": "@storybook/react-native-ui-lite",
+  "version": "10.3.0",
+  "description": "lightweight ui components for react native storybook",
+  "keywords": [
+    "react",
+    "react-native",
+    "storybook"
+  ],
+  "homepage": "https://storybook.js.org/",
+  "bugs": {
+    "url": "https://github.com/storybookjs/react-native/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/storybookjs/react-native.git",
+    "directory": "packages/react-native-ui-lite"
+  },
+  "react-native": "src/index.tsx",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "*.js",
+    "*.d.ts",
+    "src/**/*"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "prepare": "tsup",
+    "check:types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.14",
+    "storybook": "10.3.0-alpha.14",
+    "ts-dedent": "^2.2.0",
+    "tsup": "^8.5.0",
+    "typescript": "~5.9.3"
+  },
+  "dependencies": {
+    "@gorhom/portal": "^1.0.14",
+    "@legendapp/list": "3.0.0-beta.38",
+    "@nozbe/microfuzz": "^1.0.0",
+    "@storybook/react": "10.3.0-alpha.14",
+    "@storybook/react-native-theming": "^10.3.0",
+    "@storybook/react-native-ui-common": "^10.3.0",
+    "polished": "^4.3.1",
+    "react-native-safe-area-context": "^5"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": ">=0.57.0",
+    "storybook": ">=10 || ^10"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

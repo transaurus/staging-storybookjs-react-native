@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([["7995"],{5418(e){e.exports=JSON.parse('{"tags":[{"label":"Releases","permalink":"/react-native/blog/tags/releases","description":"Release posts","count":1},{"label":"Guides","permalink":"/react-native/blog/tags/guides","description":"Guide posts","count":1}]}')}}]);
